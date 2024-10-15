@@ -628,6 +628,7 @@ export default {
           }
         }
       } catch (error) {
+        this.addCustomHeaders()
         this.handleLoginFormError(error)
       } finally {
         this.processing = false

@@ -106,7 +106,7 @@ export default {
       password: null,
       error: null,
       showForm: false,
-      showAddCustomHeaders: true,
+      showAddCustomHeaders: false,
       authMethods: [],
       oauth: {
         state: null,

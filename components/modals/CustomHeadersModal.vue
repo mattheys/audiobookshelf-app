@@ -54,7 +54,7 @@ export default {
       newHeaderKey: '',
       newHeaderValue: '',
       headersCopy: {},
-      showAddHeader: false
+      showAddHeader: true
     }
   },
   watch: {

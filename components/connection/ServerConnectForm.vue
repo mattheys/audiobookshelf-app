@@ -22,6 +22,10 @@
           <div v-if="serverConnectionConfigs.length" class="flex items-center mb-4" @click="showServerList">
             <span class="material-icons text-fg-muted">arrow_back</span>
           </div>
+          <div class="relative flex">
+            <button class="outline-none uppercase tracking-wide font-semibold text-xs text-gray-300" type="button" @click="addCustomHeaders">Add Custom Headers</button>
+            <div v-if="numCustomHeaders" class="rounded-full h-5 w-5 flex items-center justify-center text-xs bg-success bg-opacity-40 leading-3 font-semibold font-mono ml-1">{{ numCustomHeaders }}</div>
+          </div>
           <h2 class="text-lg leading-7 mb-2">{{ $strings.LabelServerAddress }}</h2>
           <ui-text-input v-model="serverConfig.address" :disabled="processing || !networkConnected || !!serverConfig.id" placeholder="http://55.55.55.55:13378" type="url" class="w-full h-10" />
           <div class="flex justify-end items-center mt-6">

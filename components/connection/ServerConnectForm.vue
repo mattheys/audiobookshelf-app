@@ -102,7 +102,7 @@ export default {
       password: null,
       error: null,
       showForm: false,
-      showAddCustomHeaders: false,
+      showAddCustomHeaders: true,
       authMethods: [],
       oauth: {
         state: null,
